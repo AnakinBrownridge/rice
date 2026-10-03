@@ -1,5 +1,5 @@
 # Credits
-# Daven Davenport 
+# Dave Davenport 
 Fancy2 Rofi theme
 # outfoxxed
 Quickshell
