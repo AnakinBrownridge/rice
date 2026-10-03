@@ -6,11 +6,12 @@ This setup includes:
 - a slim top bar with workspace indicators and clock
 - Wi‑Fi status in the panel
 - a first-run setup wizard for shell preferences
+- a matching Rofi theme for launcher and app selection
 - a simple reload script to restart the Quickshell session
 
 ## Preview
 
-This project is designed around a dark, low-noise aesthetic with teal accents and a compact status bar.
+This project is designed around a dark, low-noise aesthetic with teal accents, soft contrast, and a compact status bar.
 
 ## Features
 
@@ -18,6 +19,7 @@ This project is designed around a dark, low-noise aesthetic with teal accents an
 - Quickshell-based top panel
 - Real-time clock and Wi‑Fi detection
 - Minimal onboarding flow for first-time setup
+- Rofi theming for a polished launcher experience
 - Fast reload workflow for iterative tweaking
 
 ## Files
@@ -25,6 +27,7 @@ This project is designed around a dark, low-noise aesthetic with teal accents an
 - `shell.qml` — main Quickshell panel UI
 - `greeting.qml` — first-run setup dialog
 - `reload.sh` — starts/reloads the Quickshell instance
+- `rofi/fancy2.rasi` — custom Rofi theme
 - `backgrounds/` — wallpaper assets
 - `anarice.slnx` — project solution metadata
 
@@ -32,6 +35,7 @@ This project is designed around a dark, low-noise aesthetic with teal accents an
 
 - Hyprland
 - Quickshell (`qs`)
+- Rofi
 - A supported font stack such as JetBrains Mono and Inter
 - `nmcli` for Wi‑Fi status lookup
 
@@ -43,7 +47,7 @@ This project is designed around a dark, low-noise aesthetic with teal accents an
    cd rice
    ```
 
-2. Make sure Quickshell is installed and available in your PATH.
+2. Make sure Quickshell and Rofi are installed and available in your PATH.
 
 3. Launch the setup from your Hyprland session:
    ```bash
@@ -55,6 +59,13 @@ This project is designed around a dark, low-noise aesthetic with teal accents an
    ./reload.sh
    ```
 
+5. Apply the custom Rofi theme if you want the matching launcher styling:
+   ```bash
+   rofi -theme ~/.config/rofi/fancy2.rasi
+   ```
+
+   If your config is elsewhere, copy or symlink the theme into your Rofi config directory and load it from there.
+
 ## Customization
 
 Most of the styling and layout is controlled in `shell.qml`. You can tweak:
@@ -65,6 +76,8 @@ Most of the styling and layout is controlled in `shell.qml`. You can tweak:
 - Wi‑Fi label behavior
 
 The first-time setup wizard is in `greeting.qml`, which can be modified to add more configuration steps or defaults.
+
+The Rofi appearance is controlled in `rofi/fancy2.rasi`, which you can edit to match your preferred color palette and launcher density.
 
 ## Notes
 
