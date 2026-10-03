@@ -86,3 +86,6 @@ This project is a personal desktop setup and is intentionally simple. It is mean
 ## License
 
 This project is licensed under the MIT License. See `LICENSE` for details.
+
+## Credits
+See `CREDITS.md` for details.
