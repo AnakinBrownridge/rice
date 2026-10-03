@@ -1,2 +1,2 @@
-# rice
-My main ricing setup
+# anaRice
+My first ricing setup!
